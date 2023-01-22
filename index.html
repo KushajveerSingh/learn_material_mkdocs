@@ -1,0 +1,935 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.6">
+    
+    
+      
+        <title>My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.558e4712.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#setup" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
+          
+            <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    My Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Home
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        Home
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    Setup
+  </a>
+  
+    <nav class="md-nav" aria-label="Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install" class="md-nav__link">
+    Install
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upgrade" class="md-nav__link">
+    Upgrade
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vscode-setup" class="md-nav__link">
+    VSCode Setup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-actions" class="md-nav__link">
+    GitHub actions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-commands" class="md-nav__link">
+    Basic commands
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-docs" class="md-nav__link">
+    Create docs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preview-docs" class="md-nav__link">
+    Preview docs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-docs" class="md-nav__link">
+    Build docs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mkdocsyml" class="md-nav__link">
+    mkdocs.yml
+  </a>
+  
+    <nav class="md-nav" aria-label="mkdocs.yml">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#font" class="md-nav__link">
+    Font
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logo-and-favicon" class="md-nav__link">
+    Logo and Favicon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#icons" class="md-nav__link">
+    Icons
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complying-with-gdpr" class="md-nav__link">
+    Complying with GDPR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigation" class="md-nav__link">
+    Navigation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keyboard-shortcuts" class="md-nav__link">
+    Keyboard shortcuts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-content-width" class="md-nav__link">
+    Change content width
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#search" class="md-nav__link">
+    Search
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#google-analytics" class="md-nav__link">
+    Google analytics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#social-preview-images" class="md-nav__link">
+    Social preview images
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blog" class="md-nav__link">
+    Blog
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    Setup
+  </a>
+  
+    <nav class="md-nav" aria-label="Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install" class="md-nav__link">
+    Install
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upgrade" class="md-nav__link">
+    Upgrade
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vscode-setup" class="md-nav__link">
+    VSCode Setup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-actions" class="md-nav__link">
+    GitHub actions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-commands" class="md-nav__link">
+    Basic commands
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-docs" class="md-nav__link">
+    Create docs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preview-docs" class="md-nav__link">
+    Preview docs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-docs" class="md-nav__link">
+    Build docs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mkdocsyml" class="md-nav__link">
+    mkdocs.yml
+  </a>
+  
+    <nav class="md-nav" aria-label="mkdocs.yml">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#font" class="md-nav__link">
+    Font
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logo-and-favicon" class="md-nav__link">
+    Logo and Favicon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#icons" class="md-nav__link">
+    Icons
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complying-with-gdpr" class="md-nav__link">
+    Complying with GDPR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigation" class="md-nav__link">
+    Navigation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keyboard-shortcuts" class="md-nav__link">
+    Keyboard shortcuts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-content-width" class="md-nav__link">
+    Change content width
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#search" class="md-nav__link">
+    Search
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#google-analytics" class="md-nav__link">
+    Google analytics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#social-preview-images" class="md-nav__link">
+    Social preview images
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blog" class="md-nav__link">
+    Blog
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Home</h1>
+
+<h2 id="setup">Setup</h2>
+<h3 id="install">Install</h3>
+<p>Three options</p>
+<ul>
+<li><code>pip install mkdocs-material</code></li>
+<li><code>docker pull squidfunk/mkdocs-material</code></li>
+<li><code>git clone https://github.com/squidfunk/mkdocs-material.git</code> and <code>cd mkdocs-material &amp;&amp; pip install -e mkdocs-material</code></li>
+</ul>
+<h3 id="upgrade">Upgrade</h3>
+<p><code>pip install --upgrade --force-reinstall mkdocs-material</code></p>
+<h3 id="vscode-setup">VSCode Setup</h3>
+<p>Create <code>.vscode/settings.json</code> file and add the following</p>
+<pre><code class="language-json">{
+  &quot;yaml.schemas&quot;: {
+    &quot;https://squidfunk.github.io/mkdocs-material/schema.json&quot;: &quot;mkdocs.yml&quot;
+  },
+  &quot;yaml.customTags&quot;: [ 
+    &quot;!ENV scalar&quot;,
+    &quot;!ENV sequence&quot;,
+    &quot;tag:yaml.org,2002:python/name:materialx.emoji.to_svg&quot;,
+    &quot;tag:yaml.org,2002:python/name:materialx.emoji.twemoji&quot;,
+    &quot;tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format&quot;
+  ]
+}
+</code></pre>
+<h3 id="github-actions">GitHub actions</h3>
+<p>To build and deploy the documentation automatically create a github action. Also, make sure <code>gh-pages</code> is selected for publishing the documentation in github.</p>
+<p>Create <code>.github/workflows/build_docs.yml</code> and add the following</p>
+<pre><code class="language-yaml">name: build_docs 
+on:
+  push:
+    branches:
+      - main
+permissions:
+  contents: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+      - uses: actions/cache@v2
+        with:
+          key: ${{ github.ref }}
+          path: .cache
+      - run: pip install mkdocs-material 
+      - run: mkdocs gh-deploy --force
+</code></pre>
+<p>To install MkDocs plugins (<a href="https://github.com/mkdocs/mkdocs/wiki/MkDocs-Plugins">view_all</a>), add them in the second last line i.e.</p>
+<pre><code>pip install \
+    mkdocs-material \
+    mkdocs-awesome-pages-plugin \
+    ...
+</code></pre>
+<h2 id="basic-commands">Basic commands</h2>
+<h3 id="create-docs">Create docs</h3>
+<ul>
+<li><code>mkdocs new .</code></li>
+<li><code>docker run --rm -it -v ${PWD}:/docs squidfunk/mkdocs-material new .</code></li>
+</ul>
+<h3 id="preview-docs">Preview docs</h3>
+<p>The server will start at <a href="http://localhost:8000/">localhost:8000</a></p>
+<ul>
+<li><code>mkdocs serve</code> or <code>mkdocs serve --dirtyreload</code> (if the project is large)</li>
+<li><code>docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material</code></li>
+</ul>
+<h3 id="build-docs">Build docs</h3>
+<p>Documentation would be available in <code>site</code> folder</p>
+<ul>
+<li><code>mkdocs build</code></li>
+<li><code>docker run --rm -it -v ${PWD}:/docs squidfunk/mkdocs-material build</code></li>
+</ul>
+<h2 id="mkdocsyml">mkdocs.yml</h2>
+<h3 id="font">Font</h3>
+<pre><code class="language-yaml">theme:
+  # Direct integration with Google fonts.
+  # font: false -&gt; This would load system fonts
+  font:
+    text: Roboto # 300,400,400i, 700 would be used
+    code: Roboto Mono # for code blocks and 400 would be used
+</code></pre>
+<h3 id="logo-and-favicon">Logo and Favicon</h3>
+<pre><code class="language-yaml">theme:
+  # Provide logo in docs/assets/logo.png (can also be .svg)
+  logo: assets/logo.png
+  favicon: images/favicon.png
+</code></pre>
+<h3 id="icons">Icons</h3>
+<p>Create <code>overrides/.icons/</code> directory and add all the svg icons you want to use. Then in <code>mkdocs.yml</code> add</p>
+<pre><code class="language-yaml">theme:
+  custom_dir: overrides
+
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+</code></pre>
+<p>Then you can use the icons in markdown files as <code>:folder-icon-name:</code> (replace all <code>/</code> with <code>-</code>).</p>
+<h3 id="complying-with-gdpr">Complying with GDPR</h3>
+<pre><code class="language-yaml">extra:
+  consent:
+    title: Cookie consent
+    description: &gt;-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+
+# As per GDPR people should be able to change the cookies at any time.
+copyright: &gt;
+  Copyright &amp;copy; 2016 - 2023 Kushajveer Singh -
+  &lt;a href=&quot;#__consent&quot;&gt;Change cookie settings&lt;/a&gt;
+
+# Download any external assets used by your website (like fonts). Useful for
+# self hosting and for GDPR. It is faster to load fonts from Google instead of
+# self hosting.
+plugins:
+  - privacy
+</code></pre>
+<h3 id="navigation">Navigation</h3>
+<pre><code class="language-yaml">theme:
+  features:
+    # Internal links will not result in full-reloading of the page
+    - navigation.instant
+
+    # URL is automatically updated with the active anchor as highlighted 
+    # in table of contents
+    - navigation.tracking
+
+    # Top-level sections are rendered in a menu layer below the header (disabling it seems better)
+    - navigation.tabs
+
+    # Top-level sections are rendered as groups in the sidebar
+    # (disabling it seems better)
+    - navigation.sections
+
+    # Add breadcrumb at top of each page, to make navigation easier
+    # on mobile
+    - navigation.path
+
+    # For sites with a 100+ pages, the navigation links in the sidebar
+    # can take a lot of space. This feature can be used to reduce the
+    # size of the rendered HTML by more than 33% by not rendering the
+    # things that are not visible.
+    - navigation.prune
+
+    # In the left-sidebar, you can click the section heading and show
+    # an overview page. Create `index.md` file in the respective folder
+    # and add it to the beginning of the navigation section (as shown
+    # below in 'nav').
+    - navigation.indexes
+
+    # Sidebar is automatically scrolled so that the active anchor is always
+    # visible.
+    - toc.follow
+
+    # Show back-to-top button when user starts scrolling up
+    - navigation.top
+nav:
+  - Section:
+    - section/index.md
+    - Page 1: section/page-1.md
+    ...
+    - Page n: section/page-n.md
+</code></pre>
+<p>To hide things, add this to the frontmatter of markdown file</p>
+<pre><code class="language-md">---
+hide:
+  - navigation &lt;-- the left sidebar
+  - toc &lt;-- the right sidebar&gt;
+  - path &lt;-- breadcrumb if you have enabled it
+---
+
+# Document title
+</code></pre>
+<h2 id="keyboard-shortcuts">Keyboard shortcuts</h2>
+<p>When search is focused
+- Down / Up - select next/previous result
+- Esc / Tab - close search dialog
+- Enter - follow selected research</p>
+<p>WHen search is not focused
+- F / S / / - open search dialog
+- P / , - goto previous page
+- N / . - goto next page</p>
+<h2 id="change-content-width">Change content width</h2>
+<p>In <code>mkdocs.yml</code></p>
+<pre><code class="language-yaml">extra_css:
+  - stylesheets/extra.css
+</code></pre>
+<p>In <code>docs/stylesheets/extra.css</code></p>
+<pre><code class="language-css">.md-grid {
+    // set to 'initial' to use the entire available space
+    max-width: 1440px;
+}
+</code></pre>
+<h2 id="search">Search</h2>
+<pre><code class="language-yaml"># Works offline also
+plugins:
+  - search
+
+theme:
+  features:
+    # Show suggestions for the current word being typed
+    - search.suggest
+
+    # When user clicks a search result, all occurrences are highlighted
+    - search.highlight
+</code></pre>
+<p>Markdown frontmatter</p>
+<pre><code class="language-md">---
+search:
+  boost: 2 (to rank page higher)
+  boost: 0.2 (to rank page lower)
+
+  exclude: true (exclude page from search)
+---
+
+## Section 2 { data-search-exclude } &lt;-- to exclude a section from search
+
+Some content block { data-search-exclude } &lt;-- can also be used to exclude inline and block level elements
+</code></pre>
+<h2 id="google-analytics">Google analytics</h2>
+<pre><code class="language-yaml">extra:
+  analytics:
+    provider: google
+    property: G-XXXXXXXX
+</code></pre>
+<h2 id="social-preview-images">Social preview images</h2>
+<p>Images that are displayed when a link to your project documentation is shared on social media.</p>
+<ol>
+<li><code>apt-get install libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev</code></li>
+<li><code>pip install pillow cairosvg</code></li>
+<li>Add (this will add preview images to <code>assets/images/social</code>)
+    ```yaml
+    plugins:<ul>
+<li>social
+```</li>
+</ul>
+</li>
+<li>Add <code>.cache</code> directory to <code>.gitignore</code> when building site locally. Then in github action you can build the cache.</li>
+</ol>
+<h2 id="blog">Blog</h2>
+<pre><code class="language-yaml">plugins:
+  - blog
+
+nav:
+  - Blog:
+    - blog/index.md &lt;-- to show archive and category
+</code></pre>
+<p>Archive and category would be automatically generated.
+- Archive - you can see the posts for the past years (year by year)
+- Category - see posts by category</p>
+<p>The folder structure is</p>
+<pre><code>.
+├─ docs/
+│  └─ blog/
+│     ├─ posts/
+│     └─ index.md
+└─ mkdocs.yml
+</code></pre>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tracking"], "search": "assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.51d95adb.min.js"></script>
+      
+    
+  </body>
+</html>
