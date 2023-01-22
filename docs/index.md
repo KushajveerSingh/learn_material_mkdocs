@@ -259,3 +259,45 @@ Some content block { data-search-exclude } <-- can also be used to exclude inlin
 ```
 
 ## Google analytics
+```yaml
+extra:
+  analytics:
+    provider: google
+    property: G-XXXXXXXX
+```
+
+## Social preview images
+Images that are displayed when a link to your project documentation is shared on social media.
+
+1. `apt-get install libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev`
+2. `pip install pillow cairosvg`
+3. Add (this will add preview images to `assets/images/social`)
+    ```yaml
+    plugins:
+      - social
+    ```
+4. Add `.cache` directory to `.gitignore` when building site locally. Then in github action you can build the cache.
+
+## Blog
+```yaml
+plugins:
+  - blog
+
+nav:
+  - Blog:
+    - blog/index.md <-- to show archive and category
+```
+
+Archive and category would be automatically generated.
+- Archive - you can see the posts for the past years (year by year)
+- Category - see posts by category
+
+The folder structure is
+```
+.
+├─ docs/
+│  └─ blog/
+│     ├─ posts/
+│     └─ index.md
+└─ mkdocs.yml
+```
