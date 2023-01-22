@@ -1,3 +1,37 @@
 site_name: My Docs
 theme:
   name: material
+
+  palette:
+    # Operating systems have the option to switch between light and dark mode
+    # automatically based upon the time of the day. Below list value, add
+    # supports for that.
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    
+
+    - media: "(prefers-color-scheme: light)"
+      scheme: default # light mode
+      
+      # What icon and text to display when switching to light-mode
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+      # Used for header, sidebar, text links, ...
+      primary: indigo
+
+      # Elements that can be interacted with (hovered links, buttons, scrollbars)
+      accent: indigo
+
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+  features:
+    - navigation.tracking
